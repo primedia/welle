@@ -24,7 +24,7 @@
     (kv/delete bucket-name k)))
 
 
-(deftest ^{:2i true} test-basic-index-query-with-a-single-string-value
+#_(deftest ^{:2i true} test-basic-index-query-with-a-single-string-value
   (let [bucket-name "clojurewerkz.welle.test.indices-http-test"
         bucket      (wb/update bucket-name)
         k           (str (UUID/randomUUID))
@@ -40,7 +40,7 @@
     (kv/delete bucket-name k)))
 
 
-(deftest ^{:2i true} test-basic-index-query-with-a-range-of-string-values
+#_(deftest ^{:2i true} test-basic-index-query-with-a-range-of-string-values
   (let [bucket-name "clojurewerkz.welle.test.indices-http-test"
         bucket      (wb/update bucket-name)
         k1          (str (UUID/randomUUID))
@@ -58,7 +58,7 @@
     (kv/delete-all bucket-name keys)))
 
 
-(deftest ^{:2i true} test-basic-index-query-with-a-single-integer-value
+#_(deftest ^{:2i true} test-basic-index-query-with-a-single-integer-value
   (let [bucket-name "clojurewerkz.welle.test.alt-indices-test"
         bucket      (wb/update bucket-name)
         k           (str (UUID/randomUUID))
@@ -73,7 +73,7 @@
     (kv/delete bucket-name k)))
 
 
-(deftest ^{:2i true} test-basic-index-query-with-a-range-of-integer-values
+#_(deftest ^{:2i true} test-basic-index-query-with-a-range-of-integer-values
   (let [bucket-name "clojurewerkz.welle.test.indices-http-test"
         bucket      (wb/update bucket-name)
         k1          (str (UUID/randomUUID))

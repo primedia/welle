@@ -1,4 +1,4 @@
-(defproject com.novemberain/welle "1.5.1"
+(defproject com.novemberain/welle "1.5.1-RP1"
   :description "Welle is an expressive Clojure client for Riak with batteries included"
   :url "http://clojureriak.info"
   :license {:name "Eclipse Public License"}
@@ -45,5 +45,7 @@
                                :releases {:checksum :fail :update :always}}
                    "sonatype-snapshots" {:url "http://oss.sonatype.org/content/repositories/snapshots"
                                          :snapshots true
-                                         :releases {:checksum :fail :update :always}}}
+                                         :releases {:checksum :fail :update :always}}
+                   "releases" {:url "http://nexus.idg.primedia.com/nexus/content/repositories/primedia"
+                              :sign-releases false}}
   :warn-on-reflection true)
